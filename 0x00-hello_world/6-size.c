@@ -2,7 +2,7 @@
 /**
  * main - a program in C to print data types
  *
- * Return: 0
+ * Return: 0 (correct)
 */
 int main(void)
 {
