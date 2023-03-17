@@ -3,12 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - to assign a random no to a var
+ * main - to assign a random no to a var n
  *
  * Return: 0
  */
 int main(void)
 {
+	int n;
+	int x;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
