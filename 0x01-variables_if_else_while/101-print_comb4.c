@@ -4,7 +4,7 @@
  *
  * Return: 0 (correct)
  */
-int main(void)
+int main(void) 
 {
 	int n, m, l;
 
@@ -30,3 +30,4 @@ int main(void)
 		putchar('\n');
 		return (0);
 }
+
