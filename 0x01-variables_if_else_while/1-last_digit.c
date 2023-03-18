@@ -1,33 +1,32 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - to assign a random no to a var n
+ * main - print last digit of a random generated num.
  *
- * Return: 0
+ * Return: 0 (correct)
  */
 int main(void)
 {
 	int n;
-	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	x = n % 10;
-	printf("last digit of %d is %d ", n, x);
-	if (x > 5)
+
+	if ((n % 10) > 5)
 	{
-		printf("and is greater than 5");
+		printf("Last digit of %d is %d and is greater than 5\n",
+		n, n % 10);
 	}
-	if (x == 0)
+	else if ((n % 10) < 6 && (n % 10) != 0)
 	{
-		printf("and is 0");
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
+		n, n % 10);
 	}
-	if (x < 6 && x != 0)
+	else
 	{
-		printf("and is less than 6 and not 0");
+		printf("Last digit of %d is %d and is 0\n",
+		n, n % 10);
 	}
-	printf("\n");
 	return (0);
 }
