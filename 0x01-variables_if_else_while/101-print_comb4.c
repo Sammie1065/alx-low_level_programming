@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - print all possible diff. combination of three digits
+ * main - prints diff. combination of 3 digits
  *
  * Return: 0 (correct)
  */
-int main(void) 
+int main(void)
 {
 	int n, m, l;
 
@@ -27,8 +27,7 @@ int main(void)
 				}
 			}
 		}
-		putchar('\n');
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
-
