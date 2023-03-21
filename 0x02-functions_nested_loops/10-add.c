@@ -1,18 +1,13 @@
 #include "main.h"
 
 /**
- * add - adds two integers
- * @j and i - parameters to be added
- * Return: return sum
- *
+ * add - add two values
+ * @n1: the fist value to be computed
+ * @n2: the second value to be computed
+ * Return: integer value
  */
 
-int add(int i, int j)
+int add(int n1, int n2)
 {
-	int i;
-	int j;
-	int sum = i + j;
-
-	_putchar(sum);
-	return (sum);
+	return (n1 + n2);
 }
