@@ -7,7 +7,7 @@
  *
  */
 
-int add(int i int j)
+int add(int i, int j)
 {
 	int i;
 	int j;
