@@ -17,10 +17,3 @@ int mul(int a, int b)
 
 	return (mul);
 }
-
-int main(void)
-{
-	mul(a, b);
-
-	return (0);
-}
