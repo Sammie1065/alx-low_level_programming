@@ -2,15 +2,17 @@
 
 /**
  * print_numbers - to print numbers from 0 to 9
- * @i: var to be used
+ * Return: void
  */
 
-void print_numbers(int i)
+void print_numbers(void)
 {
+	char c;
 
-	for (i = 0; i < 10; i++)
+	for (c = '0'; i < '10'; c++)
+		_putchar(c);
 
-		_putchar('i');
 	_putchar('\n');
+
 
 }
