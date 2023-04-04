@@ -2,8 +2,8 @@
 
 /**
  * _strchr - a func. that locates a char. in a string
- * @c: a char to be used
- * @s: a string
+ * @c: occurence of the char.
+ * @s: in the string
  * Return: a pointer to the first occurence of a char
  */
 
