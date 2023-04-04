@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - a func. that prints sum of two diag of a squ.
+ * print_diagsums - prints the sum of the two diag of a square
  * @a: pointer to be  used
  * @size: width of matrix column
  * Return: void
