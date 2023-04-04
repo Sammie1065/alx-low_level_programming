@@ -4,17 +4,17 @@
  * *_strchr - a func. that locates a char. in a string
  * @c: occurence of the char.
  * @s: in the string
- * Return: a pointer to the first occurence of a char
+ * Return: a pointer to the first occurence of a char else NULL
  */
 
 char *_strchr(char *s, char c)
 {
 	while (*s)
 	{
-		if (*S != c)
+		if (*s != c)
 			s++;
 		else
-			return (S);
+			return (s);
 	}
 
 	if (c == '\0')
