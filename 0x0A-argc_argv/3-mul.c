@@ -19,6 +19,7 @@ int main(void)
 	if (mul > 2)
 	{
 		printf("Error\n");
+		return (1);
 	}
 
 	else
