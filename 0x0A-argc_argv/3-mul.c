@@ -1,28 +1,26 @@
 #include <stdio.h>
+#include <stdlib>
 
 /**
  * main - a prog that multiplies two numbers
- *
+ * @argc: command line argument count
+ * @argv: command line argument vector
  * Return: 0
  */
 
-int main(void)
+int main(int argc, char **argv)
 {
 	int a, b;
-	int mul;
 
-	mul = a * b;
-
-	if (mul > 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	else
-	{
-		printf("%d\n", mul);
-	}
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	printf("%d\n", a * b);
 
 	return (0);
 }
