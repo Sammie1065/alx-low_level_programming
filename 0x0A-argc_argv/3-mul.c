@@ -11,9 +11,6 @@ int main(void)
 	int a, b;
 	int mul;
 
-	printf("please input two numbers: ");
-	scanf("%d%d\n", &a, &b);
-
 	mul = a * b;
 
 	if (mul > 2)
