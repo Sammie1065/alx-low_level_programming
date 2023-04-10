@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		if (sum == 1)
-			sum++;
+			count++;
 	}
 	else
 	{
