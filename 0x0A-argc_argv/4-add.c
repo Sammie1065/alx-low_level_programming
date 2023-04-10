@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - a prog that adds two numbers
@@ -11,28 +10,29 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 0)
+	int i, j, sum = 0;
+	char *flag;
+
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	int i, k;
-	int add = 0;
-
-	for (i = 1; i < argc; i++)
+	for (i = 1; argv[i]; i++)
 	{
-		for (k = 0; argv[i][k] != '\0'; k++)
+		j = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
-			if (!isdigit(argv[i][k]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
-		add = add + atoi(argv[i]);
+		else
+		{
+			sum += j;
+		}
 	}
-
-	printf("%d\n", add);
+	printf("%d\n", sum);
 	return (0);
 }
+
