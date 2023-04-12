@@ -13,15 +13,15 @@ char **strtow(char *str)
 	int i, flag, len;
 	char **words;
 
-	if (str == NULL || str[0] == '\0' || (str[0] == '' &&str[1] == '\0'))
+	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
 		return (NULL);
 
 	i = flag = len = 0;
 	while (str[i])
 	{
-		if (flag == 0 && str[1] != '')
+		if (flag == 0 && str[1] != ' ')
 			flag = 1;
-		if (i > 0 && str[i] == '' &&str[i - 1] != '')
+		if (i > 0 && str[i] == '' &&str[i - 1] != ' ')
 		{
 			flag = 0;
 			len++;
@@ -31,6 +31,10 @@ char **strtow(char *str)
 
 	len += flag == 1 ? 1 : 0;
 	if (len == 0)
+		return (NULL);
+
+	words = (char **)malloc(sizeof(char *) * (len + 1));
+	if (words == NULL)
 		return (NULL);
 
 	util(words, str);
@@ -51,7 +55,7 @@ void util(char **words, char *str)
 	i = j = flag = 0;
 	while (str[i])
 	{
-		if (flag == 0 && str[i] != '')
+		if (flag == 0 && str[i] != ' ')
 		{
 			start = i;
 			flag = 1;
