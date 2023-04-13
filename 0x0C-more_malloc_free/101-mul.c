@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stderr.h>
+#include <stdlib.h>
 
 /**
  * _print - a func that moves a string one side
