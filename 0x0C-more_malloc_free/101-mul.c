@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _print - a func that moves a string ose side to the left and prints the string
+ * _print - a func that moves a string one side
+ * to the left and prints the string
  * @str: string to be moved
  * @l: size of string
  * Return: void
@@ -27,7 +28,8 @@ void _print(char *str, int l)
 }
 
 /**
- * mul - this func. multiplies a char with a str. and places the answer into dest
+ * mul - this func. multiplies a char with a str.
+ * and places the answer into dest
  * @n: char to multiply
  * @num: strings to be multiplied
  * @num_index: last non NULL index of num
@@ -90,7 +92,7 @@ int check_for_digits(char **av)
  * @l: lenght of string
  * Return: void
  */
- 
+
 void init(char *str, int l)
 {
 	int i;
