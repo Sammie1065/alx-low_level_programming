@@ -3,9 +3,9 @@
 
 /**
  * struct dog - dog class
- * @name: name of the dog
- * @age: the age of the dog
- * @owner: the owner of the dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  *
  * Description: Longer description
  */
@@ -14,7 +14,7 @@ struct dog
 {
 	char *name;
 	float age;
-	char owner;
+	char *owner;
 };
 
 /**
@@ -27,6 +27,6 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 char *_strcpy(char *dest, char *src);
-int _strlen(char *S);
+int _strlen(char *s);
 
 #endif
