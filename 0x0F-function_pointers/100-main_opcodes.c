@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "function_pointers.h"
 
 /**
  * print_opcodes - a func that prints the opcodes of this numbers
@@ -33,7 +32,7 @@ int main(int argc, char **argv)
 {
 	int n;
 
-	if (argv != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
