@@ -10,9 +10,10 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int (*oprt)(int, int);
+	int num_1, num_2;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -20,15 +21,26 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	oprt = get_op_func(argv[2]);
+	num_1 = atoi(argv[1]);
+	op = argv[2];
+	num_2 = atoi(argv[3]);
 
-	if (!oprt)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	if ((*op == '/' && num_2 == o) ||
+	    (*op == '%' && num_2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(op)(num_1, num_2));
+
 	return (0);
+
 }
 
