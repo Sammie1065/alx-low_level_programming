@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "function_pointers.h"
 
 /**
  * print_opcodes - a func that prints the opcodes of this numbers
