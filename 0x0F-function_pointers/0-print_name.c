@@ -9,16 +9,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("hello: %s\n", name);
+	if (name != NULL && f != NULL)
+		f(name);
 }
-/**
- * main - entry point
- * Return: nothing
- */
-
-int main(void)
-{
-	f = &print_name;
-	f("name");
-}
-
