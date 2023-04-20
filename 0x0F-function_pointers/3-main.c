@@ -10,14 +10,14 @@
  * Return: 0
  */
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
 
 	oprt = get_op_func(argv[2]);
