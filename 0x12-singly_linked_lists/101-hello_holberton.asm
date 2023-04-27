@@ -1,6 +1,6 @@
 	extern  printf		; the c function, to be called
 
-		sectin .data		; Data section, initialized variables
+		section .data		; Data section, initialized variables
  msg:		db "Hello, Holberton", 0 ; C strings needs 0
  fmt:		db "%s", 10, 0		; The printf format, "\n",'0'
 
