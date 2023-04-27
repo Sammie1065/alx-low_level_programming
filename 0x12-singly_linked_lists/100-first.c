@@ -17,7 +17,9 @@ void print_string(void)
 
 int main(void)
 {
-	print_string();
+	char *output;
+
+	output = print_string();
 
 	return (0);
 }
