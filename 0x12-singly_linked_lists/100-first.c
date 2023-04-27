@@ -1,19 +1,23 @@
 #include <stdio.h>
 
 /**
- * funtime - apply the constructor attribute to my funtime() so that
- * it is executed before my main function
+ * print_string - a func that a string before the main func is executed
  */
 
-void funtime(void) __attribute__ ((constructor))
-/**
- * funtime - implementation of funtime
- *
- */
-
-
-void funtime(void)
+void print_string(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
+}
+
+/**
+ * main - entry point
+ * Return: 0
+ */
+
+int main(void)
+{
+	print_string();
+
+	return (0);
 }
