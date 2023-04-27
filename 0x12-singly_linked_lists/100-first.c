@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
  * myBringupFun - a func that prints out something nice before
- * the main func is executed
+ * the main func is executed.
  */
-
 void myBringupFun(void) __attribute__ ((constructor));
 
 
