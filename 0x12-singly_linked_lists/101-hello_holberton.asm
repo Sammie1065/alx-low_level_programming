@@ -2,7 +2,7 @@
 
 		sectin .data		; Data section, initialized variables
  msg:		db "Hello, Holberton", 0 ; C strings needs 0
- fmt:		sb "%s", 10, 0		; The printf format, "\n",'0'
+ fmt:		db "%s", 10, 0		; The printf format, "\n",'0'
 
 		section .text		; code section.
 
