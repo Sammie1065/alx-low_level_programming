@@ -12,7 +12,7 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint *lastcard, *love;
+	listint_t *lastcard, *love;
 
 	lastcard = love = head;
 	while (lastcard && love && love->next)
