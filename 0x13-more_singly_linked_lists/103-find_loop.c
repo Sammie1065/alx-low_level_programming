@@ -25,7 +25,7 @@ listint_t *find_listint_loop(listint_t *head)
 			break;
 		}
 	}
-	if (lastcard || love || !love->next)
+	if (!lastcard || love || !love->next)
 		return (NULL);
 	while (lastcard != love)
 	{
