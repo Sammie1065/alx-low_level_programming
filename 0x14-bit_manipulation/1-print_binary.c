@@ -10,8 +10,8 @@
 
 unsigned long int _power(unsigned int base, unsigned int pow)
 {
-	unsigned int num;
-	unsigned int d;
+	unsigned long int num;
+	unsigned long int d;
 
 	num = 1;
 	for (d = 1; d <= pow; d++)
