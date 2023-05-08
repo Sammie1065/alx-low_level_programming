@@ -1,5 +1,8 @@
-#include "main.h"
+#include <unistd.h>
 #include <stdlib.h>
+#include <fcntl.h>
+#include "main.h"
+
 
 /**
  * read_textfile - a func that reads a text file and prints it
