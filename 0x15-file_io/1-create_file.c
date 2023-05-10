@@ -1,9 +1,4 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <stdio.h>
 #include "main.h"
-
 
 /**
  * create_file - a func that Create a function that creates a file.
@@ -25,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 			len++;
 	}
 
-	o = open(filename, 0_CREAT | O_RDWR | O_TRUNC);
+	o = open(filename, 0_CREAT | O_RDWR | O_TRUNC, 0664);
 	w = write(o, text_content, len);
 
 	if (o == -1 || w == -1)
