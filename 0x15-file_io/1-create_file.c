@@ -9,7 +9,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int o, w, len = 0;
+	int fa, w, len = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -20,13 +20,13 @@ int create_file(const char *filename, char *text_content)
 			len++;
 	}
 
-	o = open(filename, 0_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content, len);
+	fa = open(filename, 0_CREAT | O_RDWR | O_TRUNC, 0600);
+	w = write(fa, text_content, len);
 
-	if (o == -1 || w == -1)
+	if (fa == -1 || w == -1)
 		return (-1);
 
-	close(o);
+	close(fa);
 
 	return (1);
 }
